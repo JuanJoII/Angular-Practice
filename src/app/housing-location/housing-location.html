@@ -1,0 +1,10 @@
+<section class="listening">
+    <img [src]="housingLocation().photo" 
+    alt="foto exterior de {{ housingLocation().name }}" 
+    class="listening-photo"
+    />
+    <h2 class="listening-heading">{{ housingLocation().name }}</h2>
+    <p class="listening-location">{{ housingLocation().city }}, {{ housingLocation().state }}</p>
+    <a [routerLink]="['/details', housingLocation().id]">Learn More</a>
+</section>
+

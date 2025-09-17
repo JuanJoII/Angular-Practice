@@ -1,0 +1,205 @@
+article {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.img-container {
+  text-align: center;
+}
+
+.listing-photo {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.listing-description {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 30px;
+}
+
+.listing-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.listing-location {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.listing-location::before {
+  content: '📍';
+}
+
+.listing-features {
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.section-heading {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.listing-features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listing-features li {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.listing-features li:last-child {
+  border-bottom: none;
+}
+
+/* Add icons to features */
+.listing-features li:nth-child(1)::before {
+  content: '🏠';
+}
+
+.listing-features li:nth-child(2)::before {
+  content: '📶';
+}
+
+.listing-features li:nth-child(3)::before {
+  content: '🧺';
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  article {
+    margin: 20px;
+  }
+  
+  .listing-photo {
+    height: 300px;
+  }
+  
+  .listing-heading {
+    font-size: 1.5rem;
+  }
+  
+  .listing-location {
+    font-size: 1rem;
+  }
+}
+
+.listing-apply {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.listing-apply .section-heading {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 30px;
+}
+
+.listing-apply form {
+  display: grid;
+  gap: 24px;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.listing-apply label {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 8px;
+  display: block;
+}
+
+.listing-apply input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  background: transparent;
+  color: white;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.listing-apply input:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+}
+
+.listing-apply button.primary {
+  margin-top: 10px;
+  padding: 16px 32px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.listing-apply button.primary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+.listing-apply button.primary:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .listing-apply {
+    margin: 20px;
+  }
+  
+  .listing-apply form {
+    padding: 15px;
+  }
+  
+  .listing-apply label {
+    font-size: 1rem;
+  }
+  
+  .listing-apply input,
+  .listing-apply button.primary {
+    font-size: 0.9rem;
+    padding: 10px 16px;
+  }
+}

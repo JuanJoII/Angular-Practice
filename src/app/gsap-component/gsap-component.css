@@ -1,0 +1,7 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  opacity: 1;
+  transform: translateX(0);
+}

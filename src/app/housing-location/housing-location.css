@@ -1,0 +1,75 @@
+.listening {
+  background: #202c3d;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px;
+  overflow: hidden;
+  width: 320px;
+  transition: all 0.3s ease;
+}
+
+.listening:hover {
+  transform: translateY(-4px);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 30px 0px;
+}
+
+.listening-photo {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.listening:hover .listening-photo {
+  transform: scale(1.05);
+}
+
+.listening-content {
+  padding: 1.5rem;
+}
+
+.listening-heading {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.2;
+  background: #202c3d;
+}
+
+.listening-location {
+  color: lightgray;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: #202c3d;
+}
+
+.listening-location::before {
+  content: '📍';
+  font-size: 1rem;
+}
+
+.listening a {
+    display: flex;
+    padding: 8px 16px;
+    margin-top: 16px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.listening a:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.listening a:active {
+    transform: translateY(0);
+}
